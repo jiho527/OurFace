@@ -2,10 +2,10 @@
 (앞으로 계속 추가하거나 수정할 것이다)
 
 ## 참조 링크
-[마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601, "link")    
-[git 간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html,'git')    
-[초심자를 위한 Github 협업](https://milooy.wordpress.com/2017/06/21/working-together-with-github-tutorial/,'git')    
-[git 설명](https://webclub.tistory.com/317,'git)
+[마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601)    
+[git 간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html)    
+[초심자를 위한 Github 협업](https://milooy.wordpress.com/2017/06/21/working-together-with-github-tutorial/)    
+[git 설명](https://webclub.tistory.com/317)
 
 ## git에 대한 이해
 

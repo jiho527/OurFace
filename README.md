@@ -40,7 +40,7 @@
 
 #### 2) 안드로이드 & 서버
 
-<img src="C:\Users\jjujj\Desktop\KakaoTalk_20200917_202435151.png" style="zoom:50%;" />
+<img src="\diagram.png" style="zoom: 67%;" />
 
 
 
@@ -48,19 +48,19 @@
 
 #### Hair Before
 
-<img src="C:\Users\jjujj\Desktop\hair_before.jpg" alt="hair_before" style="zoom: 25%;" />
+<img src="\hair_before.jpg" style="zoom:25%;" />
 
 #### Hair After
 
-<img src="C:\Users\jjujj\Desktop\hair_after.jpg" style="zoom:25%;" />
+<img src="\hair_after.jpg" style="zoom:20%;" />
 
 #### Lip Before
 
-<img src="C:\Users\jjujj\Desktop\lip_before.jpg" style="zoom:15%;" />
+<img src="\lip_before.jpg" style="zoom:15%;" />
 
 #### Lip After
 
-<img src="C:\Users\jjujj\Desktop\lip_after.jpg" style="zoom:25%;" />
+<img src="\lip_after.jpg" style="zoom:20%;" />
 
 ### 6. 활용방안 및 기대효과
 

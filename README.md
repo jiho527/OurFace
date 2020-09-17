@@ -1,119 +1,77 @@
-# OurFace팀을 위한 간단한 github 사용법
-(앞으로 계속 추가하거나 수정할 것이다)
+# 프로젝트 명 : Best Color
 
-## 참조 링크
-[마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601)    
-[git 간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html)    
-[초심자를 위한 Github 협업](https://milooy.wordpress.com/2017/06/21/working-together-with-github-tutorial/)    
-[git 설명](https://webclub.tistory.com/317)    
-[브랜치란](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)
+## 부제 : Find your Best Color
 
-## git에 대한 이해
 
-이번 프로젝트에서 지호는 sever를, 소현이는 android를 맡았다. 각자 코딩을 하는데 이것을 어떻게 합쳐서 하나의 '화니 페이스'를 만들 수 있을까. 이것을 하기 위해서 지호와 소현이는 git을 사용하기로 했다.    
-그래서 팀장 지인이는 'OurFace'라는 이름의 새로운 저장소(Repository)를 만들었다.    
-이제 **원격**(Github 사이트)에 OurFace 저장소가 생겼다. 이제 여기에 코딩을 하기 위해 **로컬**(내 컴퓨터)에 OurFace 저장소를 다운받아야 한다.    
 
-소현이는 먼저 git을 설치하고 **git clone {url}** 을 사용해서 저장소를 받아왔다.    
+### 1. 프로젝트 목적
 
-소현이는 제일 먼저 저장소에 대한 설명을 적은 README.md 파일을 만들었다. 이것을 **원격에** 올리고 싶었다.
+- #### 사용자가 다양한 색을 테스트해 보며 자신에게 어울리는 색을 찾게 해주는 어플을 만들자
 
-git에 올릴 파일은 3가지 상태가 있다.
-1. 포장 전인 파일들 : **Unstaged Files**
-2. 포장 하기로 한 파일들 : **Staged Files**
-3. 포장이 완료된 파일 묶음 : **Commit**
 
-소현이는 **git status**를 쳐봤더니 README.md 파일이 **Unstaged 상태**인 것을 알 수 있었다.    
-그래서 **git add**를 써서 그 파일을 **Staged 상태**로 바꿨다.     
 
-그리고 소현이는 **git commit -m "README 파일추가"** 라고 쳤다. 이는 'README 파일추가'란 이름을 붙여서 선물로 포장할거라는 의미를 나타내기 위함이었다. 이렇게 코드를 **의미있는 단위로 쪼개서 포장**하는 것이 Commit이다. 각 Commit별로 변경된 이력을 편하게 볼 수 있고, 예전에 올렸던 커밋으로 코드를 돌릴 수도 있다.
+### 2. 애플리케이션 기능
 
-이렇게 커밋만 하면 내 컴퓨터에만 저장되어 있고 **Github 사이트에는 아직 올라가지 않은 상태**였다. 이 커밋들을 진짜 원격(Github 사이트)에 올리기 위해 **git push -u origin master**를 사용했다. push를 하면 git이 우리 컴퓨터 폴더에 있는 .git 파일을 참조해서 그 곳에 저장된 OurFace 저장소 url에 코드를 올려준다. 이렇게 바로 올린 코드는 **master 브랜치**(기본 브랜치)에 올라갔다.    
+- #### 사용자가 자신의 사진과 원하는 색을 선택하면 머리카락이나 입술 색을 바꿔 사진에 적용해주는 어플이다.
 
-소현이와 지호는 Master 브랜치에는 **완벽한 코드**만 두자고 약속을 했다.    
-그래서 **개발중인 코드**를 올리기 위한 dev 브랜치를 만들었다.
-소현이와 지호는 일단 우리가 만들 어플 뼈대만 만들어서 dev 브랜치에 커밋 후 푸시했다.
-초기 세팅을 마치고 소현이와 지호는 서로 나뉘어서 코딩을 하기로 했다.    
 
-소현이는 그림판 페이지를 만들기 위해 'feature/draw'란 이름으로, 지호는 로그인 페이지를 만들기 위해 'feature/login'이란 이름으로 dev 브랜치의 최신 커밋으로부터 새로운 브랜치를 만들었다.
 
-소현이가 그림판 페이지를 다 만들어 dev 브랜치에 'feature/draw' 브랜치를 합치려고 한다. 하지만 그 전에 현준이한테 리뷰를 먼저 받고 싶어 한다.
+### 3. Best Color 애플리케이션의 효과
 
-그러기 위해서 하는 것이 **Pull Request**이다.
+- #### 사용자들이 여러 색을 미리 경험할 수 있게 하여 잘 어울리는 지 스스로 판단할 수 있게 해준다.
 
-## 1. 반드시 알아야 할 기본 용어
+- #### 사용자들이 자신에게 맞는 색을 찾을 수 있게 도와 섣부른 제품 구매로 인한 돈 낭비를 줄일 수 있다.
 
-* Command Line : git 명령어를 입력할 때 우리는 커맨드 라인 인터페이스를 사용할 것이다.
-* Repository(저장소) : 프로젝트가 존재하는 디렉토리나 저장 공간이다. 줄여서 "repo"라고도 한다.
-* Version Control(버전 관리) : git에서는 소스 코드가 변경된 이력을 쉽게 확인할 수 있고, 특정 시          점에 저장된 버전과 비교하거나 특정 시점으로 되돌아갈 수도 있다. 
-또 내가 올리려는 파일이 누군가 편집한 내용과 충돌한다면, 서버에 업로드 할 때 경고 메시지가 발생된다. 이로써 여러 명이 공유한 파일을 동시에 편집한다고 해도 다른 사람이 먼저 변경하고 있던 내용은 절대 지워지지 않는다.
-* Branch : 협업시 유용한 기능이다. 작업자들은 메인 프로젝트의 브랜치를 따와서(branch off), 자신         이 변경하고 싶은 자신만의 버전을 만든다. 작업을 끝낸 후, 프로젝트의 메인 디렉토리인 master에 브랜치를 다시 merge한다.
+  
 
-## 2. 기본 명령어
+### 4. 프로젝트 설계
 
-1. Git 저장소 만들기    
-    * git init : 내 컴퓨터에 폴더를 하나 만들고, 그 안에서 이 명령어를 실행하면 거기에 새로운 git 저장소가 만들어진다.
-    * git clone {url} : 원격 저장소에 있는 프로젝트를 내 컴퓨터로 복제할 때 사용한다.
-2. 수정하고 저장소에 저장하기    
-    * git status : 파일의 상태 확인하기
-    * git add <파일이름> : 파일을 새로 추적하기 - 모든 파일을 추적할 때는 git add * 사용
-    * git commit -m "변경된 메시지 내용" : 변경사항 커밋하기
-    * git rm : 파일을 삭제하기
-    * git push -u origin master : 변경된 내용 발행하기
-    
-## 3. Git Branch 종류(5가지)
+#### 1) 인공지능 모델
 
-Gitflow Workflow에서는 항상 유지되는 메인 브랜치들(master,develop)과 일정 기간 동안만 유지되는 보조 브랜치들(feature, release, hotfix)을 포함하여 총 5가지의 브랜치를 사용한다.
+- ##### [참조 github](https://github.com/zllrunning/face-parsing.PyTorch)
 
-1. Master Branch    
-**제품으로 출시될 수 있는 브랜치**    
-배포(Release) 이력을 관리하기 위해 사용. 즉, 배포 가능한 상태만을 관리한다.
+- ##### 참조 모델 : YU, Changqian, et al. Bisenet: Bilateral segmentation network for real-time semantic segmentation. In: *Proceedings of the European conference on computer vision (ECCV)*. 2018. p. 325-341.
 
-2. Develop Branch    
-**다음 출시 버전을 개발하는 브랜치**    
-기능 개발을 위한 브랜치들을 병합하기 위해 사용. 즉, 모든 기능이 추가되고 버그가 수정되어 배포 가능한 안정적인 상태라면 develop 브랜치를 'master' 브랜치에 merge한다. 평소에는 이 브랜치를 기반으로 개발을 진행한다.
+- ##### Semantic Segmentation 을 통해 얼굴에서 hair 와 lip 을 구분한다.
 
-3. Feature Branch    
-**기능을 개발하는 브랜치**    
-feature 브랜치는 새로운 기능 개발 및 버그 수정이 필요할 때마다 'develop' 브랜치로부터 분기한다. feature 브랜치에서의 작업은 기본적으로 공유할 필요가 없기 때문에, **자신의 로컬 저장소에서** 관리한다.    
-개발이 완료되면 'develop' 브랜치로 merge하여 다른사람들과 공유한다.    
+- ##### R,G,B 값을 통해 머리와 입술의 색을 바꿔주는 작업을 수행한다.
 
-   1. 'develop' 브랜치에서 새로운 기능에 대한 feature 브랜치를 분기한다.
-   2. 새로운 기능에 대한 작업을 수행한다.
-   3. 작업이 끝나면 'develop' 브랜치로 병합(merge)한다.
-   4. 더 이상 필요하지 않은 feature 브랜치는 삭제한다.
-   5. 새로운 기능에 대한 'feature' 브랜치를 중앙 원격 저장소에 올린다. (push)    
-              
-   * feature 브랜치 이름 정하기     
-      + [feature/기능요약] 형식을 추천 (e.g. feature/login)
-   
-4. Release Branch    
-**이전 출시 버전을 준비하는 브랜치**    
-배포를 위한 전용 브랜치를 사용함으로써 한 팀이 배포를 준비하는 동안 다른 팀은 다음 배포를 위한 기능 개발을 계속할 수 있다.
 
-   1. 'develop' 브랜치에서 배포할 수 있는 일정 수준의 기능이 모이면 또는 정해진 배포 일정이 되면, release 브랜치를 분기한다.
-      * release 브랜치를 만드는 순간부터 배포 사이클이 시작된다.
-      * release 브랜치에서는 배포를 위한 최종적인 버그 수정, 문서 추가 등 배포와 직접적으로 관련된 작업을 수행하고 병합한다.
-      
-   2. 'release' 브랜치에서 배포 가능한 상태가 되면
-      * 'master' 브랜치에 병합한다. (이때, 병합한 커밋에 Release 버전 태그를 부여한다.)
-      * 배포를 준비하는 동안 release 브랜치가 변경되었을 수 있으므로 배포 완료 후 'develop'에도 병합한다.
-   이때, 다음 번 배포를 위한 개발 작업은 'develop' 브랜치에서 계속 진행해 나간다.
-                         
-   * release 브랜치 이름 정하기
-      + [release-* ] 형식을 추천 (e.g. release-1.2)
-      
-5. Hotfix Branch    
-**출시 버전에서 발생한 버그를 수정하는 브랜치**
-배포한 버전에 긴급하게 수정을 해야 할 필요가 있을 경우, 'master' 브랜치에서 분기하는 브랜치이다. 'develop' 브랜치에서 문제가 되는 부분을 수정하여 배포 가능한 버전을 만들기에는 시간도 많이 소요되고 안정성을 보장하기도 어려우므로 바로 배포가 가능한 'master' 브랜치에서 직접 브랜치를 만들어 필요한 부분만을 수정한 후 다시 'master' 브랜치에 병합하여 이를 배포해야 하는 것이다.
 
-   1. 배포한 버전에 긴급하게 수정을 해야 할 필요가 있을 경우,
-      * 'master' 브랜치에서 hotfix 브랜치를 분기한다.
-   2. 문제가 되는 부분만을 빠르게 수정한다.
-      * 다시 'master' 브랜치에 병합하여 이를 안정적으로 다시 배포한다.
-      * 새로운 버전 이름으로 태그를 매긴다.
-   3. hotfix 브랜치에서의 변경 사항은 'develop' 브랜치에도 병합한다.
-      
-   * hotfix 브랜치 이름 정하기
-      + [hotfix-* ] 형식을 추천 (e.g. hotfix-1.2.1)
-      
+#### 2) 안드로이드 & 서버
+
+<img src="C:\Users\jjujj\Desktop\KakaoTalk_20200917_202435151.png" style="zoom:50%;" />
+
+
+
+### 5. 결과 이미지
+
+#### Hair Before
+
+<img src="C:\Users\jjujj\Desktop\hair_before.jpg" alt="hair_before" style="zoom: 25%;" />
+
+#### Hair After
+
+<img src="C:\Users\jjujj\Desktop\hair_after.jpg" style="zoom:25%;" />
+
+#### Lip Before
+
+<img src="C:\Users\jjujj\Desktop\lip_before.jpg" style="zoom:15%;" />
+
+#### Lip After
+
+<img src="C:\Users\jjujj\Desktop\lip_after.jpg" style="zoom:25%;" />
+
+### 6. 활용방안 및 기대효과
+
+#### 1. Lip Color
+
+##### 브랜드 별로 다양한 립스틱이 나열되어 있으면 사용자가 원하는 립스틱을 선택하여 자신에게 어울리는지 확인해볼 수 있다. 우리 어플은 입생로랑, 맥, 샤넬, 디올 등 고가의 제품들의 색을 사용자에게 적용해볼 수 있게 만들었다. 선택만 하면 그 색을 내 사진에 적용시켜 변화된 나의 모습을 보여준다.
+
+#### 2. Hair Color
+
+##### 색깔 별로 여러가지 머리색이 나열되어 있다. 염색 했을 때 실패하지 않게 하기 위해 사용자는 여러가지 머리색을 적용해볼 수 있다. 
+
+#### 3. 서비스 확장 가능성
+
+##### 립스틱 판매 플랫폼, 또는 헤어샵 추천 플랫폼과 제휴하여 색을 추천해주는 것 뿐만 아니라 더 나은 서비스를 제공할 수 있다.

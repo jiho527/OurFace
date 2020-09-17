@@ -54,21 +54,13 @@
 
 ### 5. 결과 이미지
 
-#### Hair Before
+[Hair Before](.\img\hair_before)
 
-<img src=".\image\hair_before.jpg" style="zoom:25%;" />
+[Hair After](.\image\hair_after)
 
-#### Hair After
+[Lip Before](.\image\lip_after)
 
-<img src=".\image\hair_after.jpg" style="zoom:20%;" />
-
-#### Lip Before
-
-<img src=".\image\lip_before.jpg" style="zoom:15%;" />
-
-#### Lip After
-
-<img src=".\image\lip_after.jpg" style="zoom:20%;" />
+[Lip After](.\image\lip_after)
 
 
 

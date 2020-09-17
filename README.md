@@ -10,9 +10,13 @@
 
 
 
+
+
 ### 2. 애플리케이션 기능
 
 - #### 사용자가 자신의 사진과 원하는 색을 선택하면 머리카락이나 입술 색을 바꿔 사진에 적용해주는 어플이다.
+
+
 
 
 
@@ -22,7 +26,9 @@
 
 - #### 사용자들이 자신에게 맞는 색을 찾을 수 있게 도와 섣부른 제품 구매로 인한 돈 낭비를 줄일 수 있다.
 
-  
+
+
+
 
 ### 4. 프로젝트 설계
 
@@ -40,7 +46,9 @@
 
 #### 2) 안드로이드 & 서버
 
-<img src="\diagram.png" style="zoom: 67%;" />
+<img src=".\image\diagram.png" style="zoom: 67%;" />
+
+
 
 
 
@@ -48,19 +56,21 @@
 
 #### Hair Before
 
-<img src="\hair_before.jpg" style="zoom:25%;" />
+<img src=".\image\hair_before.jpg" style="zoom:25%;" />
 
 #### Hair After
 
-<img src="\hair_after.jpg" style="zoom:20%;" />
+<img src=".\image\hair_after.jpg" style="zoom:20%;" />
 
 #### Lip Before
 
-<img src="\lip_before.jpg" style="zoom:15%;" />
+<img src=".\image\lip_before.jpg" style="zoom:15%;" />
 
 #### Lip After
 
-<img src="\lip_after.jpg" style="zoom:20%;" />
+<img src=".\image\lip_after.jpg" style="zoom:20%;" />
+
+
 
 ### 6. 활용방안 및 기대효과
 

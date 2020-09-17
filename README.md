@@ -54,13 +54,13 @@
 
 ### 5. 결과 이미지
 
-[Hair Before](.\img\hair_before)
+![Hair Before](.\img\hair_before){:width="20%" height="20%"}
 
-[Hair After](.\image\hair_after)
+![Hair After](.\image\hair_after)
 
-[Lip Before](.\image\lip_after)
+![Lip Before](.\image\lip_after)
 
-[Lip After](.\image\lip_after)
+![Lip After](.\image\lip_after)
 
 
 

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/LadyDanger"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/mac_ladydanger"
+        app:layout_constraintBottom_toTopOf="@+id/CascadeBordo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/RelentlesslyRed"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/mac_relentlesslyred"
+        app:layout_constraintBottom_toTopOf="@+id/WetBemilion"
+        app:layout_constraintEnd_toStartOf="@+id/SpotlightMe"
+        app:layout_constraintStart_toEndOf="@+id/LadyDanger"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/SpotlightMe"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/mac_spotlightme"
+        app:layout_constraintBottom_toTopOf="@+id/NedeEmblum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/CascadeBordo"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ysl_cascadebordo"
+        app:layout_constraintBottom_toTopOf="@+id/Amur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LadyDanger" />
+
+    <Button
+        android:id="@+id/WetBemilion"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ysl_wetbemilion"
+        app:layout_constraintBottom_toTopOf="@+id/Arthor"
+        app:layout_constraintEnd_toStartOf="@+id/NedeEmblum"
+        app:layout_constraintStart_toEndOf="@+id/CascadeBordo"
+        app:layout_constraintTop_toBottomOf="@+id/RelentlesslyRed" />
+
+    <Button
+        android:id="@+id/NedeEmblum"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ysl_nudeemblum"
+        app:layout_constraintBottom_toTopOf="@+id/rebele"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpotlightMe" />
+
+    <Button
+        android:id="@+id/Amur"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ch_amur"
+        app:layout_constraintBottom_toTopOf="@+id/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CascadeBordo" />
+
+    <Button
+        android:id="@+id/Arthor"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ch_arthor"
+        app:layout_constraintBottom_toTopOf="@+id/BDior"
+        app:layout_constraintEnd_toStartOf="@+id/rebele"
+        app:layout_constraintStart_toEndOf="@+id/Amur"
+        app:layout_constraintTop_toBottomOf="@+id/WetBemilion" />
+
+    <Button
+        android:id="@+id/rebele"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ch_rebele"
+        app:layout_constraintBottom_toTopOf="@+id/ivispink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NedeEmblum" />
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/dior_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Amur" />
+
+    <Button
+        android:id="@+id/BDior"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/dior_bdior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivispink"
+        app:layout_constraintStart_toEndOf="@+id/red"
+        app:layout_constraintTop_toBottomOf="@+id/Arthor"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <Button
+        android:id="@+id/ivispink"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/dior_ivispink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rebele" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lip_pallette" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

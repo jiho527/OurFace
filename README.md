@@ -54,7 +54,7 @@
 
 ### 5. 결과 이미지
 
-[Hair Before](.\image\hair_before)
+[Hair Before](https://github.com/ji-in/OurFace/blob/master/image/hair_after.jpg)
 
 
 

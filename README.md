@@ -54,21 +54,19 @@
 
 ### 5. 결과 이미지
 
-[hair before]
-
-<img src="image\hair_before.jpg" style="zoom:25%;" />
+[image/hair_before]: 	"Hair Before"
 
 [hair after]
 
-<img src="image\hair_after.jpg" style="zoom:20%;" />
+
 
 [lip before]
 
-<img src="image\lip_before.jpg" style="zoom:15%;" />
+
 
 [lip after]
 
-<img src="image\lip_after.jpg" style="zoom:20%;" />
+
 
 ### 6. 활용방안 및 기대효과
 

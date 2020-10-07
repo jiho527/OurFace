@@ -54,7 +54,13 @@
 
 ### 5. 결과 이미지
 
-[Hair Before](https://github.com/ji-in/OurFace/blob/master/image/hair_after.jpg)
+[Hair Before](https://github.com/ji-in/OurFace/blob/master/image/hair_before.jpg)
+
+[Hair After](https://github.com/ji-in/OurFace/blob/master/image/hair_after.jpg)
+
+[Lip Before](https://github.com/ji-in/OurFace/blob/master/image/lip_before.jpg)
+
+[Lip After](https://github.com/ji-in/OurFace/blob/master/image/lip_after.jpg)
 
 
 

@@ -54,7 +54,7 @@
 
 ### 5. 결과 이미지
 
-[Hair Before]: C:\Users\jiinkim\Desktop\OurFace\image\lip_before
+[Hair Before]: .\image\hair_before	"hair before"
 
 
 

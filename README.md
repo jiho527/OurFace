@@ -54,7 +54,7 @@
 
 ### 5. 결과 이미지
 
-[Hair Before]: .\image\hair_before	"hair before"
+[Hair Before](.\image\hair_before.jpg)
 
 
 

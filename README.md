@@ -4,6 +4,16 @@
 
 
 
+###### 상명대학교 컴퓨터과학과 캡스톤 디자인 OurFace 팀
+
+###### 팀장 : 김지인(인공지능)
+
+###### 팀원 : 이소현(안드로이드), 임지호(서버), 이수빈(안드로이드), 박현준(인공지능)
+
+------
+
+
+
 ### 1. 프로젝트 목적
 
 - #### 사용자가 다양한 색을 테스트해 보며 자신에게 어울리는 색을 찾게 해주는 어플을 만들자
@@ -54,13 +64,13 @@
 
 ### 5. 결과 이미지
 
-![Hair Before](.\img\hair_before){:width="20%" height="20%"}
+[Hair Before](https://github.com/ji-in/OurFace/blob/master/image/hair_before.jpg)
 
-![Hair After](.\image\hair_after)
+[Hair After](https://github.com/ji-in/OurFace/blob/master/image/hair_after.jpg)
 
-![Lip Before](.\image\lip_after)
+[Lip Before](https://github.com/ji-in/OurFace/blob/master/image/lip_before.jpg)
 
-![Lip After](.\image\lip_after)
+[Lip After](https://github.com/ji-in/OurFace/blob/master/image/lip_after.jpg)
 
 
 

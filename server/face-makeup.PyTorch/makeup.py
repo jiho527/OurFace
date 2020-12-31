@@ -5,15 +5,13 @@ from skimage.filters import gaussian
 from test import evaluate
 import argparse
 from flask import Flask, render_template, request, send_file, redirect, url_for
-# Flask 모듈 임포트
 from werkzeug.utils import secure_filename # 파일이름의 보안 버전 반환
 
 import base64
 from io import BytesIO
 from PIL import Image
 
-global i
-i = 0
+from personal_color_analysis import personal_color
 
 
 app = Flask(__name__) # Flask 객체를 app에 할당
@@ -83,6 +81,7 @@ def get_json() :
     color_code_g = int(jsonfile['ColorCode_G'])
     color_code_b = int(jsonfile['ColorCode_B'])
 
+    #받은 파일 확인
     print(color_code_r)
     print(color_code_g)
     print(color_code_b)
@@ -93,9 +92,11 @@ def get_json() :
       'lower_lip': 13
     }
 
-    image_path = 'imgs/' + filename
+    image_path = 'resize_imgs/' + filename
+    print('image_path: ', image_path)
     cp = 'cp/79999_iter.pth'
 
+    # 이미지 파싱
     image = cv2.imread(image_path)
     parsing = evaluate(image_path, cp)   
     parsing = cv2.resize(parsing, image.shape[0:2], interpolation=cv2.INTER_NEAREST)
@@ -110,9 +111,10 @@ def get_json() :
         image = hair(image,parsing,parts[1],lip_color)
         image = hair(image,parsing,parts[2],lip_color)
 
+    # 결과사진 저장
     cv2.imwrite(result_path, cv2.resize(image, (512, 512)))
-    return 'Success'
 
+    return '200 OK'
 
 @app.route('/', methods = ['GET', 'POST'])
 def handle_request():
@@ -120,17 +122,36 @@ def handle_request():
 
    global filename
    filename = secure_filename(imagefile.filename)
-   print("\nReceived image File name : " + imagefile.filename)
+   print("\nReceived image File name : " + filename)
+
+   filename = filename + '.png'
    imagefile.save("./imgs/" + filename)
 
-   global result_path
-   global i
-   
-   result_path = 'static/' + filename + str(i) +'.png'
-   i += 1
+   # 사진 크기 조정
+   img = cv2.imread("./imgs/" + filename)
+   img_resize = cv2.resize(img, (int(img.shape[0]), int(img.shape[0])))
+   cv2.imwrite("./resize_imgs/" + filename, img_resize)
 
+   global result_path   
+   result_path = 'static/' + filename
+
+   print('result_path: ', result_path)
    return result_path
 
+
+@app.route('/personal_color', methods = ['GET', 'POST'])
+def personal():
+    #a single image
+    personal_img = request.files['image']
+    personal_name = "./personal_imgs/" + secure_filename(personal_img.filename)
+
+    personal_img.save(personal_name)
+    
+    result = personal_color.analysis(personal_name)
+    print(result)
+    
+    return result
+    
 
 if __name__ == '__main__':
     app.run(host="117.16.43.105", port="8080")

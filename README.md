@@ -1,4 +1,4 @@
-# 프로젝트 명 : Best Color[수정중]
+# 프로젝트 명 : Best Color
 
 ## 부제 : Find your Best Color
 
@@ -12,4 +12,17 @@
 
 ------
 
+Result Image
+
+Changing hair color
+
+<img src=".\image\hair_result.jpg" style="zoom:25%;" />
+
+Changing lip color
+
+<img src=".\image\lip_result.jpg" style="zoom:25%;" />
+
+Showing personal color
+
+<img src=".\image\personalColor_result.jpg" style="zoom:25%;" />
 

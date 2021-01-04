@@ -12,17 +12,17 @@
 
 ------
 
-Result Image
+## Result Image
 
-Changing hair color
+Changing hair
 
-<img src=".\image\hair_result.jpg" style="zoom:25%;" />
+<center><img src="./image/hair_result.jpg" width="300" height="500"></center>
 
-Changing lip color
+Changing lip
 
-<img src=".\image\lip_result.jpg" style="zoom:25%;" />
+<center><img src="./image/lip_result.jpg" width="300" height="500"></center>
 
-Showing personal color
+Showing persnal color
 
-<img src=".\image\personalColor_result.jpg" style="zoom:25%;" />
+<center><img src="./image/personalColor_result.jpg" width="300" height="500"></center>
 
